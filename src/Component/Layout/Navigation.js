@@ -28,10 +28,10 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand>Amazon</Navbar.Brand>
        
-          <Nav.Link >Home</Nav.Link>
-          <Nav.Link ><Link to="/store">Store</Link></Nav.Link>
-          <Nav.Link>About</Nav.Link>
-          <Nav.Link >Contact</Nav.Link>
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/store">Store</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/contactus">Contact</Nav.Link>
           <Dropdown alignRight>
             <Dropdown.Toggle variant="success" >
               <ShoppingCartIcon />
