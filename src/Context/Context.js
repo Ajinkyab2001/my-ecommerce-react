@@ -1,7 +1,7 @@
 import React, { useContext, useReducer,createContext } from 'react'
 import productsArr from '../Component/data';
 import { cartReducer } from './Reducer';
-import Cart from './CartContext';
+import Carts from './CartContext';
 
 
 const Context = ({children}) => {
@@ -13,7 +13,7 @@ const Context = ({children}) => {
     })
 
   return (
-    <Cart.Provider value={{state,dispatch}}>{children}</Cart.Provider>
+    <Carts.Provider value={{state,dispatch}}>{children}</Carts.Provider>
   )
 }
 
