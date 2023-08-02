@@ -25,10 +25,11 @@ const productsArr = [
   },
 
   {
-    id: 7,
-    title: " Active Performance Leggings",
+    id: 3,
 
-    price: 70,
+    title: "Active Performance Leggings",
+
+    price: 100,
 
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
 
@@ -49,6 +50,7 @@ const productsArr = [
   },
   {
     id: 5,
+
     title: "Business Professional Blouse",
 
     price: 100,
