@@ -2,17 +2,27 @@ import React, { useContext } from "react";
 import "./ProductCard.css";
 import Carts from "../../Context/CartContext";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
   const {
     state,
     dispatch,
   } = useContext(Carts);
+
+  const singleProductStorageHandler =()=>{
+    dispatch({ type: "ADD_SINGLE_PRODUCT", payload: product });
+  }
+
   return (
-    <div className="productCard__wrapper">
+    
+    <div className="productCard__wrapper" >
+    
       <div>
-        <img className="productCard__img" src={product.imageUrl} alt="img" />
-        <h4>{product.title}</h4>
+      <Link to={`/store/${product.id}/${product.title}`} >
+        <img className="productCard__img" src={product.imageUrl} alt="img" onClick={singleProductStorageHandler} />
+        <h4 onClick={singleProductStorageHandler}>{product.title}</h4>
+        </Link>
         <div className="ProductCard__price">${product.price}</div>
       </div>
       {state.cart.some((p) => p.id === product.id) ? (
@@ -34,8 +44,12 @@ const ProductCard = ({ product }) => {
       {/* <div>
         <button>Add to Cart</button>
     </div> */}
+    
     </div>
+    
+    
   );
+  
 };
 
 export default ProductCard;

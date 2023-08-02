@@ -14,6 +14,8 @@ export  const cartReducer=(state,action)=>{
               c.id === action.payload.id ? (c.qty = action.payload.qty) : c.qty
             ),
           };
+          case "ADD_SINGLE_PRODUCT":
+            return { ...state, singleProduct:{...action.payload} };
         default:
           return state
         }

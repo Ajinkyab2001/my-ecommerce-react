@@ -11,7 +11,7 @@ const Store = () => {
     <div className='products__wrapper'>
       
       {state.productsArr.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product.id} id={product.id} product={product} />
       ))}
     </div>
   );

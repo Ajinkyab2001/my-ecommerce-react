@@ -1,0 +1,25 @@
+.productContainer {
+    
+    align-items: center;
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .item{
+    background-color: rgb(200, 199, 199);
+
+  }
+
+  .formcontrol {
+    width: 35%;
+    max-width: 40%;
+  
+  }
+
+  .selectbutton{
+    display: flex;
+    flex-direction: row;
+  }
