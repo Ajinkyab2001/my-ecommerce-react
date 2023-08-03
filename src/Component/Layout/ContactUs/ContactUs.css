@@ -26,11 +26,16 @@ form span{
 
 form button{
     height: 30px;
-    width: 80px;
+    /* width: 80px; */
     align-items: center;
     margin: 10px auto;
     background-color: rgb(29,185,237);
     border: none;
     justify-content: center;
     cursor: pointer;
+}
+
+.switch{
+    background-color: white;
+    color: black;
 }
