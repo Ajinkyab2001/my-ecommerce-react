@@ -4,12 +4,11 @@ import Cart from './Component/Cart/Cart';
 import Home from './Component/Layout/Home/Home';
 import ContactUs from './Component/Layout/ContactUs/ContactUs';
 import Navigation from './Component/Layout/Navigation';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Store from './Component/Layout/Store/Store';
 import About from './Component/Layout/About/About';
 import ProductDetail from './Component/Card/ProductDetail';
 import Auth from './Component/Layout/Auth/Auth';
-import AuthcontextProvider from './Context/AuthContext/AuthcontextProvider';
 import AuthContext from './Context/AuthContext/AuthContext';
 import { useContext } from 'react';
 

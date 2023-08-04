@@ -13,14 +13,7 @@ const Navigation = () => {
   const { state, dispatch } = useContext(Carts);
   const { isLoggedIn, logoutHandler } = useContext(AuthContext);
   return (
-    // <div className='header'>
-    //      <span>Home</span>
-    //      <span>Store</span>
-    //      <span>About</span>
-    //      <span>Contact</span>
-    //      <div><ShoppingCartIcon /><span>0</span></div >
-
-    // </div>
+    
 
     <Navbar bg="dark" variant="dark">
       <Container>
@@ -41,7 +34,7 @@ const Navigation = () => {
         <Dropdown alignRight>
           <Dropdown.Toggle variant="success">
             <ShoppingCartIcon />
-            <Badge>{state.cart.length}</Badge>
+            <Badge>{isLoggedIn && state.cart.length}</Badge>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
